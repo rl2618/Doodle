@@ -1,0 +1,26 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid" ng-app="app">
+
+    <div class="layout-title-bar" data-ng-controller="Layout">
+        <div class="row">
+            <div class="layout-title-bar-logo-area col-sm-6">
+                <img class="layout-icon" src="" />
+                <div class="layout-title-area">
+                    <p class="layout-logo-title">{{vm.title}}</p>
+                    <p class="layout-logo-subtitle">{{vm.subtitle}}</p>
+                </div>
+            </div>
+            <div class="layout-title-bar-controls col-sm-6">
+                <div>
+                    <button class="btn button-profile">Profile</button>
+                    <button class="btn button-login">Login</button>
+                    <button class="btn button-register">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

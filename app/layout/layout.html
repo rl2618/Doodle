@@ -1,17 +1,20 @@
+<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/> -->
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="layout.js"></script>
 </head>
-<body class="container-fluid" ng-app="app">
+<body class="container-fluid">
 
-    <div class="layout-title-bar" data-ng-controller="Layout">
+    <div class="layout-title-bar" ng-app="myApp" ng-controller="myCtrl">
         <div class="row">
             <div class="layout-title-bar-logo-area col-sm-6">
-                <img class="layout-icon" src="" />
+                <!-- <img class="layout-icon"/> -->
                 <div class="layout-title-area">
-                    <p class="layout-logo-title">{{vm.title}}</p>
-                    <p class="layout-logo-subtitle">{{vm.subtitle}}</p>
+                    <p class="layout-logo-title">{{title}}</p>
+                    <p class="layout-logo-subtitle">{{subtitle}}</p>
                 </div>
             </div>
             <div class="layout-title-bar-controls col-sm-6">
@@ -24,3 +27,4 @@
         </div>
     </div>
 </body>
+</html>
